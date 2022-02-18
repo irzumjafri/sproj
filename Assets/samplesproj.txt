@@ -1,0 +1,43 @@
+:: StoryTitle
+SPROJ sample
+
+:: StoryData
+{
+ "ifid": "F5F11B91-6862-4BD9-B97B-A4DC2C8D265F",
+ "format": "Entweedle",
+ "format-version": "1.1.1",
+ "startnode": "1",
+ "zoom": "0.6",
+ "start": "The Morning"
+}
+
+:: UserScript [script]
+
+
+:: UserStylesheet [stylesheet]
+
+
+:: The Morning {"position":"404,170","size":"100,100"}
+You wake up early. What do you do
+[[Go to sleep again!->Afternoon]]
+[[Brush your teeth!->Washroom]]
+
+:: Afternoon {"position":"303,456","size":"100,100"}
+It's late and you haven't done anything.
+[[Feel bad about yourself->Bad Day]]
+
+:: Washroom {"position":"479,320","size":"100,100"}
+Oops! My toothbrush feel inside the drain.
+[[Go buy a new toothbrush -> The Mart]]
+[[Wash your face and go back to sleep->Afternoon]]
+
+::  The Mart {"position":"596,457","size":"100,100"}
+You completed your chores and did all your groceries. It was a good day.[[Feel good about yourself->Good Day]]
+
+:: Bad Day {"position":"311,608","size":"100,100"}
+Hopefully tomorrow's a good day.
+[[Go to Sleep->The Morning]]
+
+:: Good Day {"position":"596,607","size":"100,100"}
+Had a good one. Can't wait to get up tomorrow.
+[[Go to Sleep->The Morning]]
